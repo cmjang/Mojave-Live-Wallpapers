@@ -13,10 +13,10 @@ Begin VB.Form Form1
    Begin VB.CommandButton Command3 
       Caption         =   "取消开机自启"
       Height          =   735
-      Left            =   3720
+      Left            =   3600
       TabIndex        =   3
       Top             =   600
-      Width           =   1215
+      Width           =   1335
    End
    Begin VB.CommandButton Command2 
       Caption         =   "设置程序为开机自启"
@@ -32,7 +32,7 @@ Begin VB.Form Form1
       Left            =   1800
       TabIndex        =   0
       Top             =   600
-      Width           =   1935
+      Width           =   1815
    End
    Begin VB.Label Label1 
       BeginProperty Font 
@@ -86,7 +86,7 @@ If exitproc("Mojave.exe") Then  ''判断是否Mojave.exe的进程存在
     Command1.Enabled = False
 Else
     Label1.Caption = "ERROR 卸载错误"
-    Command1.Enabled = False
+    Command1.Enabled = True
     End If
     
 End Sub
