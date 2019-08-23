@@ -11,7 +11,7 @@ Begin VB.Form Form1
    ScaleWidth      =   1800
    StartUpPosition =   3  '´°¿ÚÈ±Ê¡
    Begin VB.Timer Timer1 
-      Interval        =   1000
+      Interval        =   60000
       Left            =   120
       Top             =   120
    End
@@ -31,5 +31,10 @@ ts = Hour(Now())
 End Sub
 
 Private Sub Timer1_Timer()
-If ts <> Hour(Now()) Then Call change
+If ts <> Hour(Now()) Then
+Call change
+ts = Hour(Now())
+Else
+
+End If
 End Sub
