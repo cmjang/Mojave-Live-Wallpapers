@@ -1,19 +1,21 @@
 VERSION 5.00
 Begin VB.Form Form1 
+   BorderStyle     =   0  'None
    Caption         =   "Form1"
-   ClientHeight    =   645
-   ClientLeft      =   60
-   ClientTop       =   405
-   ClientWidth     =   1800
+   ClientHeight    =   420
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   435
    Icon            =   "Form1.frx":0000
    LinkTopic       =   "Form1"
-   ScaleHeight     =   645
-   ScaleWidth      =   1800
+   ScaleHeight     =   420
+   ScaleWidth      =   435
+   ShowInTaskbar   =   0   'False
    StartUpPosition =   3  '´°¿ÚÈ±Ê¡
    Begin VB.Timer Timer1 
       Interval        =   60000
-      Left            =   120
-      Top             =   120
+      Left            =   0
+      Top             =   0
    End
 End
 Attribute VB_Name = "Form1"

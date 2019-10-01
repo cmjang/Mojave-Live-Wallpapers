@@ -17,3 +17,5 @@ Title = String(255, Chr(0))
 i = GetWindowText(hwnd, Title, Len(Title) - 1)
 GetWinText = StrConv(LeftB(StrConv(Title, vbFromUnicode), i), vbUnicode)
 End Function
+
+
